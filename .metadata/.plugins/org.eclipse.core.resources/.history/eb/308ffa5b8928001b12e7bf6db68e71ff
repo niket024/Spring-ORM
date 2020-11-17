@@ -1,0 +1,14 @@
+package com.nik;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.orm.hibernate5.HibernateTemplate;
+
+public class PersonDao
+{
+	@Autowired
+	HibernateTemplate hibernateTemplate;
+	public void save()
+	{
+
+	}
+}

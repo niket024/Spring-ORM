@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans
+	xmlns="https://www.springframework.org/schema/mvc"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="https://www.springframework.org/schema/beans"
+	xmlns:context="https://www.springframework.org/schema/context"
+	xmlns:tx="https://www.springframework.org/schema/tx"
+	xsi:schemaLocation="https://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd
+		https://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		https://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd
+		https://www.springframework.org/schema/tx https://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+	<context:component-scan base-package="com.nik.*" />
+	<!-- For reading properties files -->
+	<context:property-placeholder
+		location="classpath:db.properties" />
+
+	<beans:bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<beans:property name="driverClassName"
+			value="com.mysql.jdbc.Driver" />
+		<beans:property name="url"
+			value="jdbc:mysql://localhost:3306/TestDB" />
+		<beans:property name="username" value="pankaj" />
+		<beans:property name="password" value="pankaj123" />
+	</beans:bean>
+
+	<!-- Hibernate 4 SessionFactory Bean definition -->
+	<beans:bean id="hibernate4AnnotatedSessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<beans:property name="dataSource" ref="dataSource" />
+		<beans:property name="annotatedClasses">
+			<beans:list>
+				<beans:value>com.nik.Person</beans:value>
+			</beans:list>
+		</beans:property>
+		<beans:property name="hibernateProperties">
+			<beans:props>
+				<beans:prop key="hibernate.dialect">org.h2.Driver
+				</beans:prop>
+				<beans:prop key="hibernate.show_sql">true</beans:prop>
+			</beans:props>
+		</beans:property>
+	</beans:bean>
+
+	<bean id="hibernatetemplate"
+		class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionfactory"></property>
+	</bean>
+</beans:beans>

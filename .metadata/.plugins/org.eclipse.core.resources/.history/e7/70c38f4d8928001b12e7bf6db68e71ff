@@ -1,0 +1,9 @@
+package com.nik;
+
+public class PersonDao
+{
+	public void save()
+	{
+
+	}
+}

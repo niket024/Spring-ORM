@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="C:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc5.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/commons-collections.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/hibernate3.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/hibernate-entitymanager.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/javassist-3.4.GA.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/jaxen-1.1-beta-7.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/jta.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/slf4j-api-1.5.0.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/slf4j-log4j12-1.5.0.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/spring-aop.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/spring-beans.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/spring-context.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/spring-context-support.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/spring-core.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/spring-jdbc.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/spring-jms.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/spring-orm.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/spring-test.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/spring-tx.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/spring-web.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/spring-webmvc.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/spring-webmvc-portlet.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java/spring/required jar file for orm/spring-webmvc-struts.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java-software/spring3.0+4.0/commons-logging-1.1.3/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java-software/spring3.0+4.0/commons-logging-1.1.3/commons-logging-1.1.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java-software/spring3.0+4.0/commons-logging-1.1.3/commons-logging-1.1.3-sources.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java-software/spring3.0+4.0/commons-logging-1.1.3/commons-logging-1.1.3-tests.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java-software/spring3.0+4.0/commons-logging-1.1.3/commons-logging-1.1.3-test-sources.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java-software/spring3.0+4.0/commons-logging-1.1.3/commons-logging-adapters-1.1.3.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java-software/spring3.0+4.0/commons-logging-1.1.3/commons-logging-api-1.1.3.jar"/>
+	<classpathentry kind="lib" path="E:/java-software&amp;Program/java-software/spring3.0+4.0/commons-logging-1.1.3/commons-logging-tests.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

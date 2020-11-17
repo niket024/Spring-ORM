@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Niket\learning\git\Spring-ORM\Spring-ORM\.metadata\.plugins\org.eclipse.jdt.core
+188876183.index
+3755034919.index
+2454410285.index
+273383285.index

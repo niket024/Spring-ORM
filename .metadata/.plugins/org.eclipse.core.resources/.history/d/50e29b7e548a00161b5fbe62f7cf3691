@@ -1,0 +1,45 @@
+package com.nik;
+
+import java.util.Properties;
+
+import org.hibernate.SessionFactory;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.orm.hibernate3.HibernateTemplate;
+import org.springframework.orm.hibernate3.LocalSessionFactoryBean;
+
+public class Manager
+{
+	public static void main(String[] args) throws Exception
+	{
+		DriverManagerDataSource dmds = new DriverManagerDataSource();
+		dmds.setDriverClassName("oracle.jdbc.driver.OracleDriver");
+		dmds.setUrl("jdbc:oracle:thin:@localhost:1521:XE");
+		dmds.setUsername("JDBC");
+		dmds.setPassword("great123");
+		
+		LocalSessionFactoryBean bean = new LocalSessionFactoryBean();
+		bean.setDataSource(dmds);
+		Properties pr = new Properties();
+		pr.setProperty("hibernate.dialect",
+				"org.hibernate.dialect.OracleDialect");
+		pr.setProperty("hibernate.hbm2ddl.auto", "create");
+		pr.setProperty("hibernate.show_sql", "true");
+		bean.setHibernateProperties(pr);
+		String mappingfiles[] = { "com/nik/person.hbm.xml" };
+		bean.setMappingResources(mappingfiles);
+		bean.afterPropertiesSet();
+		HibernateTemplate template = new HibernateTemplate();
+
+		template.setSessionFactory((SessionFactory) bean.getObject());
+		template.afterPropertiesSet();
+		Person p1=new Person();
+		p1.setId(45);
+		p1.setFname("abc");
+		p1.setLname("xyz");
+		p1.setAge(23);
+		template.save(p1);
+		System.out.println("done");
+		
+
+	}
+}

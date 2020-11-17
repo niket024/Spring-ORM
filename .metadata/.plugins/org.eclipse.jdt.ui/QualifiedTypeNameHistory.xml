@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.jdbc.datasource.DriverManagerDataSource"/>
+<fullyQualifiedTypeName name="org.springframework.orm.hibernate3.LocalSessionFactoryBean"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.orm.hibernate3.HibernateTemplate"/>
+<fullyQualifiedTypeName name="com.nik.Person"/>
+</qualifiedTypeNameHistroy>
